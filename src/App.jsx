@@ -4,12 +4,13 @@ import { TbBrandGmail } from "react-icons/tb";
 import { FaPhoneAlt } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
+
 function App() {
   const projects = [
   {
-    "title": "Animated Portfolio Website",
-    "photo": "src/assets/Screenshot 2025-06-30 142623.png",
-    "description": "A fully responsive and animated personal portfolio built using React, TailwindCSS, and Framer Motion.",
+    "title": "Portfolio Website",
+    "photo": "public/Screenshot 2025-06-30 142623.png",
+    "description": "A fully responsive personal portfolio built using React and TailwindCSS",
     "link": "https://your-demo-link.com/portfolio",
     "key" : 0,
   },
@@ -22,28 +23,28 @@ function App() {
   },
   {
     "title": "Haunted House Model",
-    "photo": "src/assets/Screenshot 2025-06-30 141901.png",
+    "photo": "public/Screenshot 2025-06-30 141901.png",
     "description": "A spooky haunted house scene created using Three.js with realistic lighting, fog, textures, and ghost animations.",
     "link": "https://your-demo-link.com/haunted-house",
     "key" : 2,
   },
   {
     "title": "Dev Diary Web App",
-    "photo": "src/assets/Screenshot 2025-06-30 141629.png",
+    "photo": "public/Screenshot 2025-06-30 141629.png",
     "description": "A developer-focused diary app to write, share, and rate diary entries with cloud file storage, comments, and real-time notifications.",
     "link": "https://github.com/DeepanshuSolanki09/diary-sharing-app-backend",
     "key" : 3,
   },
   {
     "title": "3D Product Viewer",
-    "photo": "src/assets/Screenshot 2025-06-30 141958.png",
+    "photo": "public/Screenshot 2025-06-30 141958.png",
     "description": "An interactive 3D viewer to showcase products with rotation, zoom, and lighting using Three.js.",
     "link": "https://your-demo-link.com/3dviewer",
     "key" : 4,
   },
   {
     "title": "Galaxy Model in Three.js",
-    "photo": "src/assets/Screenshot 2025-06-30 142105.png",
+    "photo": "public/Screenshot 2025-06-30 142105.png",
     "description": "A detailed galaxy model created with particles and shaders in Three.js, offering customizable spiral arms and colors.",
     "link": "https://your-demo-link.com/galaxy-model",
     "key" : 5,
@@ -133,7 +134,7 @@ function App() {
           <div className="flex justify-center flex-col items-center flex-wrap md:w-[950px] md:flex-row h-auto py-[50px] gap-5">
             {projects.map((data) => (
               <div className="md:w-[300px] w-4/5 h-auto  rounded-xl shadow-xl md:px-4 py-4 flex flex-col gap-3" key={data.key}>
-              <div className="w-full h-3/4 overflow-hidden">
+              <div className="w-full min-h-3/4 overflow-hidden">
                 <img src={data.photo} className="h-full w-full object-contain"></img>
               </div>
               <h1 className="text-xl font-semibold">{data.title}</h1>
