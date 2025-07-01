@@ -8,6 +8,7 @@ import house from '/Screenshot 2025-06-30 141901.png'
 import diary from '/Screenshot 2025-06-30 141629.png'
 import DDD from '/Screenshot 2025-06-30 141958.png'
 import galaxy from '/Screenshot 2025-06-30 142105.png'
+import hero from '/Portfolio-pana.svg'
 
 function App() {
   const projects = [
@@ -92,7 +93,7 @@ function App() {
             </button>
           </div>
           <div className="md:h-1/2 md:w-1/4 md:scale-115 w-1/2 scale-125">
-          <img src="src/assets/Portfolio-pana.svg" className="h-full w-full scale-125"></img>
+          <img src={hero} className="h-full w-full scale-125"></img>
           </div>
         </div>
 
