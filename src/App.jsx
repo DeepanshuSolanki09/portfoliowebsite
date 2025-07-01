@@ -133,8 +133,8 @@ function App() {
           <h1 className="font-bold text-4xl mb-5 text-center">Projects</h1>
           <div className="flex justify-center flex-col items-center flex-wrap md:w-[950px] md:flex-row h-auto py-[50px] gap-5">
             {projects.map((data) => (
-              <div className="md:w-[300px] w-4/5 h-auto  rounded-xl shadow-xl md:px-4 py-4 flex flex-col gap-3" key={data.key}>
-              <div className="w-full min-h-3/4 overflow-hidden">
+              <div className="md:w-[300px] w-4/5 md:h-[300px] h-auto  rounded-xl shadow-xl md:px-4 py-4 flex flex-col gap-3" key={data.key}>
+              <div className="w-full h-3/4 overflow-hidden">
                 <img src={data.photo} className="h-full w-full object-contain"></img>
               </div>
               <h1 className="text-xl font-semibold">{data.title}</h1>
