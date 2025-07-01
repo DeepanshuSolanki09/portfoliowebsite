@@ -3,13 +3,17 @@ import { FaLinkedin } from "react-icons/fa";
 import { TbBrandGmail } from "react-icons/tb";
 import { FaPhoneAlt } from "react-icons/fa";
 import { useEffect, useState } from "react";
-
+import portfolio from '/Screenshot 2025-06-30 142623.png'
+import house from '/Screenshot 2025-06-30 141901.png'
+import diary from '/Screenshot 2025-06-30 141629.png'
+import DDD from '/Screenshot 2025-06-30 141958.png'
+import galaxy from '/Screenshot 2025-06-30 142105.png'
 
 function App() {
   const projects = [
   {
     "title": "Portfolio Website",
-    "photo": "public/Screenshot 2025-06-30 142623.png",
+    "photo": portfolio,
     "description": "A fully responsive personal portfolio built using React and TailwindCSS",
     "link": "https://your-demo-link.com/portfolio",
     "key" : 0,
@@ -23,28 +27,28 @@ function App() {
   },
   {
     "title": "Haunted House Model",
-    "photo": "public/Screenshot 2025-06-30 141901.png",
+    "photo": house,
     "description": "A spooky haunted house scene created using Three.js with realistic lighting, fog, textures, and ghost animations.",
     "link": "https://your-demo-link.com/haunted-house",
     "key" : 2,
   },
   {
     "title": "Dev Diary Web App",
-    "photo": "public/Screenshot 2025-06-30 141629.png",
+    "photo": diary,
     "description": "A developer-focused diary app to write, share, and rate diary entries with cloud file storage, comments, and real-time notifications.",
     "link": "https://github.com/DeepanshuSolanki09/diary-sharing-app-backend",
     "key" : 3,
   },
   {
     "title": "3D Product Viewer",
-    "photo": "public/Screenshot 2025-06-30 141958.png",
+    "photo": DDD,
     "description": "An interactive 3D viewer to showcase products with rotation, zoom, and lighting using Three.js.",
     "link": "https://your-demo-link.com/3dviewer",
     "key" : 4,
   },
   {
     "title": "Galaxy Model in Three.js",
-    "photo": "public/Screenshot 2025-06-30 142105.png",
+    "photo": galaxy,
     "description": "A detailed galaxy model created with particles and shaders in Three.js, offering customizable spiral arms and colors.",
     "link": "https://your-demo-link.com/galaxy-model",
     "key" : 5,
